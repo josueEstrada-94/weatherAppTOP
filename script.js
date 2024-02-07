@@ -61,7 +61,7 @@ async function fetchWeatherData(searchInput) {
         const humidity = document.querySelector('#humidity');
 
         //fetching data
-        const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=e293541b8124423f9be31127240502&q=${searchInput}`, {mode: 'cors'})
+        const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=e293541b8124423f9be31127240502&q=${searchInput}`, {mode: 'cors'})
         const currentData = await response.json();
 
         //Place data into the fields.
@@ -86,7 +86,7 @@ async function fetchWeatherData(searchInput) {
 async function fetchForecastData(searchInput) {
     //Fetch data of the next 3 days.
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=e293541b8124423f9be31127240502&q=${searchInput}&days=4`, {mode: 'cors'})
+        const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=e293541b8124423f9be31127240502&q=${searchInput}&days=4`, {mode: 'cors'})
         const forecastData = await response.json();
 
         //Day 1 (Tomorrow)
