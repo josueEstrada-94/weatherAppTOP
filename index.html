@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoleApp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="current-weather">
+            <div class="input-container">
+                <input type="text" id="location" name="location" placeholder="Enter a Location">
+                <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!--CURRENT WEATHER-->
+            <div class="weather-results">
+                <div class="names">
+                    <div id="city"></div>
+                    <div id="country"></div>
+                    <div id="local-time"></div>
+                    <img id="current-icon" src="" alt="">
+                </div>
+                <div class="conditions">
+                    <div class="details"> 
+                        <div class="title">Temperature</div>
+                        <div id="temperature"></div>
+                    </div>
+
+                    <div class="details">
+                        <div class="title">Wind</div>
+                        <div id="wind"></div>
+                    </div>
+
+                    <div class="details">
+                        <div class="title">Humidity</div>
+                        <div id="humidity"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--FORECAST-->
+        <div class="day1-weather">
+            <div id="local-time-day1"></div>
+            <img id="day1-icon" src="" alt="">
+
+            <div class="conditions">
+                <div class="details"> 
+                    <div class="title">Temperature</div>
+                    <div id="temperature-day1"></div>
+                </div>
+
+                <div class="details">
+                    <div class="title">Wind</div>
+                    <div id="wind-day1"></div>
+                </div>
+
+                <div class="details">
+                    <div class="title">Humidity</div>
+                    <div id="humidity-day1"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="day2-weather">
+            <div id="local-time-day2"></div>
+            <img id="day2-icon" src="" alt="">
+
+            <div class="conditions">
+                <div class="details"> 
+                    <div class="title">Temperature</div>
+                    <div id="temperature-day2"></div>
+                </div>
+
+                <div class="details">
+                    <div class="title">Wind</div>
+                    <div id="wind-day2"></div>
+                </div>
+
+                <div class="details">
+                    <div class="title">Humidity</div>
+                    <div id="humidity-day2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="day3-weather">
+            <div id="local-time-day3"></div>
+            <img id="day3-icon" src="" alt="">
+
+            <div class="conditions">
+                <div class="details"> 
+                    <div class="title">Temperature</div>
+                    <div id="temperature-day3"></div>
+                </div>
+
+                <div class="details">
+                    <div class="title">Wind</div>
+                    <div id="wind-day3"></div>
+                </div>
+
+                <div class="details">
+                    <div class="title">Humidity</div>
+                    <div id="humidity-day3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        Powered by <a class='weatherapi' href="https://www.weatherapi.com/" title="Free Weather API">WeatherAPI.com</a>
+        <span>Copyright 2024 <a href="https://github.com/josueEstrada-94">Josue Estrada<i class="fa-brands fa-github"></i></a></span>
+    </footer>
+</body>
+</html>
