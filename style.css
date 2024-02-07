@@ -8,6 +8,8 @@
 :root {
     --body-color: linear-gradient(90deg, rgba(90,153,236,1) 7%, rgba(154,212,220,1) 51%, rgba(90,153,236,1) 100%);
     --text-color: black;
+    --input-color: lightgray;
+    --search-b-color: rgb(166, 186, 245);
     --cont-color: rgb(206, 213, 251);
     --border-color: 2px solid rgb(150, 157, 197);
     --shadow: 0px 2px 10px 0px rgba(0,0,0,0.65);
@@ -18,8 +20,10 @@
 .darkmode {
     --body-color: rgb(35, 36, 49);
     --text-color: rgb(209, 213, 219);
+    --input-color: rgb(63, 65, 77);
+    --search-b-color: rgb(28, 30, 38);
     --cont-color: rgb(63, 65, 77);
-    --border-color: 2px solid rgb(177, 188, 252);
+    --border-color: 2px solid rgb(78, 82, 109);
     --shadow: 0px 2px 10px 0px rgba(219, 221, 223, 0.65);
     --det-color: rgb(102, 102, 112);
 }
@@ -53,7 +57,8 @@ body {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border: 1px solid transparent;
-    background: lightgray;
+    background: var(--input-color);
+    color: var(--text-color);
     outline-color: royalblue;
     padding-left: 0.8em;
     font-size: 1rem;
@@ -70,8 +75,9 @@ body {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border: transparent;
-    background: rgb(166, 186, 245); 
+    background: var(--search-b-color); 
     cursor: pointer;
+    color: var(--text-color);
 }
 
 #search-button:hover {
